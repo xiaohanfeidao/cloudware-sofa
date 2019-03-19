@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.alipay.sofa</groupId>
+    <artifactId>sofaboot-dependencies</artifactId>
+    <version>2.5.3</version>
+  </parent>
+  <groupId>com.sheng.cook4j</groupId>
+  <artifactId>cloudware-sofa-nacos3</artifactId>
+  <version>1.0.0</version>
+  <name>cloudware-sofa-nacos2</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+  	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
+	
+	<dependency>
+	     <groupId>com.alipay.sofa</groupId>
+	     <artifactId>rpc-sofa-boot-starter</artifactId>
+	</dependency>
+	
+	<dependency>
+         <groupId>com.alipay.sofa</groupId>
+         <artifactId>tracer-sofa-boot-starter</artifactId>
+     </dependency>
+     
+     <dependency>
+	    <groupId>com.alipay.sofa</groupId>
+	    <artifactId>healthcheck-sofa-boot-starter</artifactId>
+	</dependency>
+	
+     <dependency>
+	     <groupId>io.zipkin.zipkin2</groupId>
+	     <artifactId>zipkin</artifactId>
+	     <version>2.11.12</version>
+	 </dependency>
+	 <dependency>
+	     <groupId>io.zipkin.reporter2</groupId>
+	     <artifactId>zipkin-reporter</artifactId>
+	     <version>2.7.13</version>
+	 </dependency>
+      
+	<dependency>
+	    <groupId>com.sheng.cook4j</groupId>
+	    <artifactId>cloudware-sofa-facade</artifactId>
+	    <version>1.0.0</version>
+	</dependency>
+  </dependencies>
+  
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
